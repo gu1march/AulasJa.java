@@ -3,23 +3,43 @@ public class main_app {
 
 	public static void main(String[] args) {
 		
-		ContaBancaria conta1 = new ContaBancaria(true, 3.0);
-		ContaBancaria conta2 = new ContaBancaria();
+
+		Cliente cliente = new Cliente();
+		Cliente cliente2 = new Cliente();
+		
+		cliente.setNome("Rafael");
+		cliente.setCpf(12345678);
+		cliente.setNumConta(333333);
+		cliente2.setNome("Rafael");
+		cliente2.setCpf(12345678);
+		cliente2.setNumConta(333333);
+		
+		System.out.println(cliente.getNome());
+		System.out.println(cliente.getCpf());
+		System.out.println(cliente.getNumConta());
 		
 		
-//		conta1.ativo = true;
-//		conta1.numConta = 1234;
-//		conta1.saldo = 100.50;
-//		
-//		System.out.println(conta1.ativo);
-//		System.out.println(conta1.numConta);
-//		System.out.println(conta1.saldo);
+		System.out.println(cliente);
+		System.out.println(cliente2);
+	
+		
+		if (cliente.getNome() == cliente2.getNome()) 
+			System.out.println("Os nomes são iguais");
+		else
+			System.out.println("Os nomes são diferentes");
 		
 		
-//		conta1.receber(100.8);
-//		conta1.dar(50.8);
-		System.out.println(conta1.saldo());
-		System.out.println(conta2.saldo());
+		if (cliente == cliente2) 
+			System.out.println("Os objetos são iguais");
+		else
+			System.out.println("Os objetos são diferentes");
+		
+		
+		if (cliente.equals(cliente2))
+			System.out.println("Os atributos são iguais");
+		else
+			System.out.println("Os atributos são diferentes");
+			
 		
 		
 	}
