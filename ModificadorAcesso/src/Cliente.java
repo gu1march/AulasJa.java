@@ -6,7 +6,8 @@ public class Cliente {
 	private int numConta;
 	
 	
-	public Cliente() {//Construtor//
+	//Construtor, serve pra dar valores iniciais pré-definidos para os atributos de um objeto//
+	public Cliente() {
 	}
 
 	
