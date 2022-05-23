@@ -4,7 +4,7 @@ public class Veiculo {
 	protected String marca;
 	protected String modelo;
 	protected int ano;
-	//Protected é como a private só que os métodos das classes filhas podem usar nos seus métodos//
+	//Protected Ã© como a private sÃ³ que os mÃ©todos das classes filhas podem usar nos seus mÃ©todos//
 	
 	public void buzinar() {
 		System.out.println("BI BI");
@@ -19,9 +19,9 @@ public class Veiculo {
 	public String getMarca() {
 		return marca;
 	}
-
+	
 	public void setMarca(String marca) {
-		this.marca = marca;
+		this.marca = marca; //O this serve para dizer que o atributo pertence a essa classe//
 	}
 
 	public String getModelo() {
