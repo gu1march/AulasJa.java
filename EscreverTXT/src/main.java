@@ -10,14 +10,16 @@ public class main {
 		
 		String s = "Texto para ser gravado no arquivo";
 		
+		//O try tenta executar uma ação que pode dar errado//
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))){
 			escrever.write(s);
 		}
 		
 		List lista = new ArrayList ();
+		//Lista cria uma lista//
 		
 		Mouse mouse = new Mouse(true,2,"Pequeno");
-		Mouse mouse1 = new Mouse(false,1,"M�dio");
+		Mouse mouse1 = new Mouse(false,1,"Médio");
 		Mouse mouse2 = new Mouse(true,3,"Grande");
 		
 		lista.add(mouse);
@@ -28,7 +30,8 @@ public class main {
 		
 		try(BufferedWriter escrever = new BufferedWriter(new FileWriter("saida.txt"))){
 			for (Object conta : lista){
-		
+			//aqui tudo que tem na lista entra em conta//
+				
 			escrever.write(conta.toString());
 		
 		
